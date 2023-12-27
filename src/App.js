@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Hero from './components/Hero'
+import Features from './components/Features'
+import AboutUs from './components/AboutUs'
+import Navbar from './components/Navbar'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='bg-white w-full overflow-hidden'>
+          <Navbar/>
     </div>
-  );
+
+    <div className='bg-normal w-full overflow-hidden'>
+          <Hero/>
+    </div>
+
+    <div className='bg-primary w-full overflow-hidden'>
+          <Features/>
+    </div>
+
+    <div className='bg-secondary w-full overflow-hidden'>
+          <AboutUs/>
+    </div>
+
+    <div className='bg-normal w-full overflow-hidden'>
+          <Contact/>
+    </div>
+
+    <div className='bg-callaction w-full overflow-hidden'>
+          <Footer/>
+    </div>
+
+    </>
+  )
 }
 
-export default App;
+export default App
