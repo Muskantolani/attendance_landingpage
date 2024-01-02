@@ -6,6 +6,7 @@ import { about1, about2, about3 } from './Images';
 const AboutUs = () => {
   return (
     <>
+
       <div>
         <div className='flex flex-col justify-center items-center'>
           <h2 className="font-semibold mt-24 text-white mb-2 text-5xl">About Us</h2>
