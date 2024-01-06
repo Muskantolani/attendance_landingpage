@@ -1,34 +1,31 @@
-import homepic from '../assests/homepic.png'
+import { homepic } from "./Images"
 import React from 'react'
 
 
 const Hero = () => {
   return (
-        <section id="home" className={`flex md:flex-row flex-col sm:py-16 py-6`}>
-          <div className={`flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6`}>
-            
-            <div className="flex flex-row justify-between items-center w-full">
-              <h1 className="flex-1 font-poppins font-semibold ss:text-[62px] text-[30px] text-black ss:leading-[90px] leading-[60px]">
-                Empower Learning, <br className="sm:block hidden" />{" "}
-                <span className="text-gradient text-primary text-6xl" >Simplify Management.</span>{" "}
-              </h1>
-            </div>
-            <p className={`font-normal text-dimWhite text-[18px] leading-[30.8px] max-w-[450px] mt-5`}>
+    <>
+      <section className='flex flex-col items-center lg:flex-row justify-between px-24 mb-10'>
+        <div className='flex justify-center items-center lg:items-start flex-col mt-5 pt-32 lg:pt-0 lg:px-6'>
+          <div className="text-center lg:text-start text-3xl sm:text-4xl">
+            <h1 className="font-bold text-black">
+              Empower Learning,
+              <span className="text-gradient text-management" >Simplify Management.</span>
+            </h1>
+          </div>
+          <p className='text-center lg:text-start font-medium text-sm sm:text-base lg:text-lg leading-7 mt-5 w-5/6'>
             Transform education effortlessly with our all-in-one platform, merging lectures, assignments, and attendance for a seamless, innovative learning experience – where simplicity meets excellence.
-            </p>
-          </div>
-    
-          <div className={`flex-1 flex flex justify-center items-center md:my-0 my-10 relative`}>
-            <img src={homepic} alt="homepic" className="w-[100%] h-[100%] relative z-[5]" />
-          </div>
-    
-        </section>
+          </p>
+          <button className='text-sm xs:text-base
+           sm:text-lg font-semibold rounded-xl mt-10 sm:mt-20 text-white bg-callaction w-36 xs:w-48 sm:w-72 md:w-80 py-4 focus:bg-active duration-200 ease-in'>Learn More</button>
+        </div>
+
+        <img className="w-auto" src={homepic} alt="homepic" />
+
+      </section>
+    </>
   )
 }
 
 export default Hero
-
-
-
-
 

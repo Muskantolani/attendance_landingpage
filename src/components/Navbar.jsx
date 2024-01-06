@@ -2,39 +2,24 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between bg-white shadow-bottom p-6">
-      <div className="flex items-center flex-shrink-0">
-        <span className="font-semibold text-xl tracking-tight">Logo</span>
-      </div>
-      <div className="ml-auto">
-        <div className="flex space-x-4">
-          <a
-            href="#home"
-            className="px-4 py-2 text-gray-800 text-xl hover:underline text-primary"
-          >
+    <nav className="flex items-center justify-between bg-white shadow-lg p-6 h-24">
+      <span className="font-semibold text-xl ml-0 xs:ml-2 sm:ml-10 md:ml-16 lg:ml-24">Logo</span>
+      <div className="ml-auto me-0 xs:me-2 sm:me-10 md:me-16 lg:me-24">
+        <div className="space-x-2 sm:space-x-8">
+          <button className="px-2 xs:px-4 sm:px-8 py-2 font-medium text-xs xs:text-sm hover:text-base focus:bg-active bg-callaction text-white duration-200 ease-in rounded-md">
             Home
-          </a>
-          <a
-            href="#contact"
-            className="px-4 py-2 text-gray-800 text-xl hover:underline text-primary"
-          >
+          </button>
+          <button className="px-2 xs:px-4 sm:px-8 py-2 font-medium text-xs xs:text-sm hover:text-base focus:bg-active bg-callaction text-white duration-200 ease-in rounded-md">
             Contact
-          </a>
-          <a
-            href="#about"
-            className="px-4 py-2 text-gray-800 text-xl hover:underline text-primary"
-          >
+          </button>
+          <button className="px-2 xs:px-4 sm:px-8 py-2 font-medium text-xs xs:text-sm hover:text-base focus:bg-active bg-callaction text-white duration-200 ease-in rounded-md">
             About Us
-          </a>
-          <a
-            href="#login"
-            className="px-4 py-2 bg-gray-800 text-white hover:underline text-primary"
-          >
+          </button>
+          <button className="px-2 xs:px-4 sm:px-8 py-2 font-medium text-xs xs:text-sm hover:text-base focus:bg-active bg-callaction text-white duration-200 ease-in rounded-md">
             Login
-          </a>
+          </button>
         </div>
       </div>
-      <hr className="mt-4 border-gray-200" />
     </nav>
   );
 };
