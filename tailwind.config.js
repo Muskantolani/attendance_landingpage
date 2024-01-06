@@ -9,7 +9,6 @@ module.exports = {
         secondary: "#658CC2",
         grey: "#939AA7",
         callaction: "#0B3175",
-        normal: "#ffffff",
         management: "#F3AA92",
         active: "#3A69BC",
       },

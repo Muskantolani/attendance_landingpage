@@ -9,26 +9,12 @@ import Navbar from './components/Navbar'
 const App = () => {
       return (
             <>
-                  <div className='bg-white'>
-                        <Navbar />
-                  </div>
+                  <Navbar />
                   <Hero />
-
-                  <div className='bg-primary'>
-                        <Features />
-                  </div>
-
-                  <div className='bg-secondary'>
-                        <AboutUs />
-                  </div>
-
-                  <div className='bg-normal'>
-                        <Contact />
-                  </div>
-
-                  <div className='bg-callaction'>
-                        <Footer />
-                  </div>
+                  <Features />
+                  <AboutUs />
+                  <Contact />
+                  <Footer />
 
             </>
       )

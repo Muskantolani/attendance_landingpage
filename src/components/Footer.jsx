@@ -5,16 +5,16 @@ const Footer = () => {
         <>
 
 
-            <footer>
+            <footer className=' bg-callaction'>
                 <div className="p-4 py-8 mx-28">
-                    <div className="flex justify-between">
+                    <div className="flex flex-col sm:flex-row justify-between">
                         <div className="mb-6 md:mb-0 text-white">
                             brand name and logo
                         </div>
-                        <div className="flex flex-row space-x-20">
+                        <div className="flex flex-col xs:flex-row xs:space-x-20 sm:space-x-10 md:space-x-20">
                             <div>
-                                <h2 className="mb-5 text-2xl font-semibold text-white">Menu</h2>
-                                <ul className="text-white font-normal">
+                                <h2 className="mb-5 text-xl md:text-2xl font-semibold text-white">Menu</h2>
+                                <ul className="text-white text-sm md:text-base font-normal">
                                     <li className="mb-4">
                                         <a href="#" className="hover:underline focus:underline-none">Home</a>
                                     </li>
@@ -30,8 +30,8 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div>
-                                <h2 className="mb-5 text-2xl font-semibold text-white">Follow us</h2>
-                                <ul className="text-white font-normal">
+                                <h2 className="mb-5 text-xl md:text-2xl font-semibold text-white">Follow us</h2>
+                                <ul className="text-white text-sm md:text-base font-normal">
                                     <li className="mb-4">
                                         <a href="#" className="hover:underline focus:underline-none">Github</a>
                                     </li>
@@ -44,8 +44,8 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div>
-                                <h2 className="mb-5 text-2xl font-semibold text-white">Legal</h2>
-                                <ul className="text-white font-normal">
+                                <h2 className="mb-5 text-xl md:text-2xl font-semibold text-white">Legal</h2>
+                                <ul className="text-white text-sm md:text-base font-normal">
                                     <li className="mb-4">
                                         <a href="#" className="hover:underline focus:underline-none">Privacy Policy</a>
                                     </li>
